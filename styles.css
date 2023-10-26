@@ -22,12 +22,14 @@ html {
   font-display: swap;
   src: url(./fonts/Lora-VariableFont_wght.ttf) format("woff");
 }
+
 @font-face {
   font-family: "Noto Sans Display";
   font-style: normal;
   font-display: swap;
   src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format("woff");
 }
+
 :root {
   /* Grunn bilið okkar er 1rem == 16px */
   --font-base-body-px: 16px;
@@ -109,6 +111,7 @@ img {
   background-color: var(--color-dark);
   color: var(--color-gold-light);
 }
+
 .header header {
   display: flex;
   flex-direction: column;
@@ -141,10 +144,12 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .header,
 .main {
   animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
@@ -155,10 +160,12 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .header,
 .main {
   animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
@@ -227,13 +234,16 @@ img {
     grid-template-rows: auto;
     max-width: var(--max-width);
   }
+
   .footer section {
     grid-column-end: span 4;
   }
+
   .footer section:first-child {
     grid-column-start: 3;
   }
 }
+
 .footer ul {
   list-style: none;
 }
@@ -262,6 +272,7 @@ dd {
     grid-template-rows: auto;
   }
 }
+
 .boxes .box {
   grid-column: span 12;
   display: flex;
@@ -285,6 +296,7 @@ dd {
     grid-column: span 4;
   }
 }
+
 .boxes .box .title {
   margin-bottom: calc(var(--spacing) * 0.5);
   border-bottom: var(--border-small) solid var(--color-dark);
